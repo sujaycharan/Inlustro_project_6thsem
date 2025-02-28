@@ -43,4 +43,4 @@ async def register_new_ip(image: UploadFile = File(...), sender_address: str, pr
     phash_value = hashlib.md5(contents).hexdigest()
     
     tx_hash = register_ip(phash_value, sender_address, private_key)
-    return {"message": "Intellectual Property Registered", "tx_hash": tx_hash}
+    return {"message": "Intellectual Property Registered Successfully", "tx_hash": tx_hash}
